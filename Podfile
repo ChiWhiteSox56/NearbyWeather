@@ -1,4 +1,4 @@
-platform :ios, '9.0'
+platform :ios, '11.0'
 
 # ignore all warnings from all pods
 inhibit_all_warnings!
@@ -6,6 +6,7 @@ inhibit_all_warnings!
 use_frameworks!
 
 def nearbyweather_pods
+    pod 'SnapKit', '~> 5.0.0'
     pod 'PKHUD', '~> 5.0'
     pod 'RainyRefreshControl', '~> 0.4'
     pod 'TextFieldCounter', :git => 'https://github.com/serralvo/TextFieldCounter.git', :branch => 'master', :commit => '4a746ad'
@@ -17,8 +18,15 @@ end
 
 target 'NearbyWeather' do
     nearbyweather_pods
-end  
+end
 
 target 'NearbyWeatherTests' do
   nearbyweather_pods
+  inherit! :search_paths
+end
+
+target 'NearbyWeatherUITests' do
+  inherit! :search_paths
+  # Pods for testing
+  pod 'FBSnapshotTestCase'
 end

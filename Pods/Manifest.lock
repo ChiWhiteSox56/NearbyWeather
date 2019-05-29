@@ -1,33 +1,43 @@
 PODS:
-  - Alamofire (4.7.3)
+  - Alamofire (4.8.2)
   - APTimeZones (1.1)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - PKHUD (5.2.0)
+  - PKHUD (5.2.1)
   - R.swift (4.0.0):
     - R.swift.Library (~> 4.0.0)
   - R.swift.Library (4.0.0)
   - RainyRefreshControl (0.4.0)
+  - SnapKit (5.0.0)
   - TextFieldCounter (1.0.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.6)
   - APTimeZones (from `https://github.com/Alterplay/APTimeZones.git`, commit `9ffd147`, branch `master`)
+  - FBSnapshotTestCase
   - FMDB (~> 2.6)
   - PKHUD (~> 5.0)
   - R.swift (~> 4.0.0)
   - RainyRefreshControl (~> 0.4)
+  - SnapKit (~> 5.0.0)
   - TextFieldCounter (from `https://github.com/serralvo/TextFieldCounter.git`, commit `4a746ad`, branch `master`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - FBSnapshotTestCase
     - FMDB
     - PKHUD
     - R.swift
     - R.swift.Library
     - RainyRefreshControl
+    - SnapKit
 
 EXTERNAL SOURCES:
   APTimeZones:
@@ -48,15 +58,17 @@ CHECKOUT OPTIONS:
     :git: https://github.com/serralvo/TextFieldCounter.git
 
 SPEC CHECKSUMS:
-  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   APTimeZones: ddb9aca50fff41d6313eb29d86d37b1edf9d2942
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  PKHUD: dd5357ac65f26115c35c4a68e9b328053326c5fe
+  PKHUD: 4e6162c4c39ac367c6934e9855c6b4762ee16256
   R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
   R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
   RainyRefreshControl: de2236ad2f46d6cfb22bf029e0067b48cdcb2925
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   TextFieldCounter: b2abbcc1181fe7d5194acb2a0fb6becee841c6e0
 
-PODFILE CHECKSUM: bfed900760c0276be8514b35eb1a854bc0de8905
+PODFILE CHECKSUM: ef8ea3e97c8c948b08f0225a478f8480a94cbf84
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
