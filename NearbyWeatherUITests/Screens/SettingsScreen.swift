@@ -31,20 +31,20 @@ class SettingsScreen: BaseScreen {
 
 
     func isDisplayedAsExpected() -> Bool {
-        return waitForElement(predicate: .isHittable, element: sectionHeaderGeneral)
+        return waitForElement(predicate: .exists, element: sectionHeaderGeneral)
             && waitForElement(predicate: .isHittable, element: listItemAbout)
             && waitForElement(predicate: .isHittable, element: listItemRefreshOnAppStart)
             && waitForElement(predicate: .isHittable, element: switchRefreshOnAppStart)
-            && waitForElement(predicate: .isHittable, element: sectionHeaderOpenWeatherMapApi)
+            && waitForElement(predicate: .exists, element: sectionHeaderOpenWeatherMapApi)
             && waitForElement(predicate: .isHittable, element: listItemApiKey)
-            && waitForElement(predicate: .isHittable, element: sectionHeaderBookmarks)
+            && waitForElement(predicate: .exists, element: sectionHeaderBookmarks)
             && waitForElement(predicate: .isHittable, element: listItemManageLocations)
             && waitForElement(predicate: .isHittable, element: listItemAddLocation)
-            && waitForElement(predicate: .isHittable, element: sectionHeaderPreferences)
-            && waitForElement(predicate: .isHittable, element: listItemAmountOfResults)
-            && waitForElement(predicate: .isHittable, element: listItemSortingOrientation)
-            && waitForElement(predicate: .isHittable, element: listItemTemperatureUnit)
-            && waitForElement(predicate: .isHittable, element: listItemDistanceSpeedUnit)
+            && waitForElement(predicate: .exists, element: sectionHeaderPreferences)
+            && waitForElement(predicate: .exists, element: listItemAmountOfResults)
+            && waitForElement(predicate: .exists, element: listItemSortingOrientation)
+            && waitForElement(predicate: .exists, element: listItemTemperatureUnit)
+            && waitForElement(predicate: .exists, element: listItemDistanceSpeedUnit)
     }
 
     @discardableResult
