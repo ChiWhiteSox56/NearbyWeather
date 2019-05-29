@@ -39,7 +39,8 @@ struct AddLocationScreenStrings {
 
 struct ListScreenStrings {
     static let defaultLocation = "Cupertino"
-    static let allLocations = ["Cupertino", "New York"]
+    static let newLocation = "New York"
+    static let allLocations = [defaultLocation, newLocation]
 }
 
 struct LocationAccessScreenStrings {

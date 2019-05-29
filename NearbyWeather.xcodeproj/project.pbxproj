@@ -25,7 +25,7 @@
 		96D955C4229E219300A03F0A /* LocationAccessScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D955BC229E219300A03F0A /* LocationAccessScreen.swift */; };
 		96D955C5229E219300A03F0A /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D955BD229E219300A03F0A /* MapScreen.swift */; };
 		96D955C7229E219F00A03F0A /* WeatherAppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D955C6229E219F00A03F0A /* WeatherAppStrings.swift */; };
-		96D955CA229E21A700A03F0A /* NearbySnapshopWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D955C8229E21A700A03F0A /* NearbySnapshopWeatherUITests.swift */; };
+		96D955CA229E21A700A03F0A /* NearbySnapshotWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D955C8229E21A700A03F0A /* NearbySnapshotWeatherUITests.swift */; };
 		96D955CB229E21A700A03F0A /* NearbyWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D955C9229E21A700A03F0A /* NearbyWeatherUITests.swift */; };
 		F204B77B1DF2EFA3000F4371 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204B77A1DF2EFA3000F4371 /* AppDelegate.swift */; };
 		F204B7801DF2EFA3000F4371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F204B77E1DF2EFA3000F4371 /* Main.storyboard */; };
@@ -120,7 +120,7 @@
 		96D955BC229E219300A03F0A /* LocationAccessScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationAccessScreen.swift; sourceTree = "<group>"; };
 		96D955BD229E219300A03F0A /* MapScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
 		96D955C6229E219F00A03F0A /* WeatherAppStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAppStrings.swift; sourceTree = "<group>"; };
-		96D955C8229E21A700A03F0A /* NearbySnapshopWeatherUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbySnapshopWeatherUITests.swift; sourceTree = "<group>"; };
+		96D955C8229E21A700A03F0A /* NearbySnapshotWeatherUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbySnapshotWeatherUITests.swift; sourceTree = "<group>"; };
 		96D955C9229E21A700A03F0A /* NearbyWeatherUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NearbyWeatherUITests.swift; path = "../../../../Women in iOS files/Weather/NearbyWeather/NearbyWeatherUITests/Tests/NearbyWeatherUITests.swift"; sourceTree = "<group>"; };
 		AC9117E5FC9606EF89375077 /* Pods_NearbyWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NearbyWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B25B5E79CF3A6FC3B3E60F51 /* Pods-NearbyWeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NearbyWeatherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NearbyWeatherTests/Pods-NearbyWeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -249,7 +249,7 @@
 		96D955A4229E20E500A03F0A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				96D955C8229E21A700A03F0A /* NearbySnapshopWeatherUITests.swift */,
+				96D955C8229E21A700A03F0A /* NearbySnapshotWeatherUITests.swift */,
 				96D955C9229E21A700A03F0A /* NearbyWeatherUITests.swift */,
 			);
 			path = Tests;
@@ -899,7 +899,7 @@
 				96D955C3229E219300A03F0A /* ListScreen.swift in Sources */,
 				96D955CB229E21A700A03F0A /* NearbyWeatherUITests.swift in Sources */,
 				96D955C7229E219F00A03F0A /* WeatherAppStrings.swift in Sources */,
-				96D955CA229E21A700A03F0A /* NearbySnapshopWeatherUITests.swift in Sources */,
+				96D955CA229E21A700A03F0A /* NearbySnapshotWeatherUITests.swift in Sources */,
 				96D955AF229E217F00A03F0A /* BaseScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

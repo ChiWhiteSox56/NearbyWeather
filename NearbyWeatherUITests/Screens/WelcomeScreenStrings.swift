@@ -27,7 +27,6 @@ class WelcomeScreen: BaseScreen {
     func enterApiKey(_ apiKey: String) ->  WelcomeScreen{
         waitForElement(predicate: .isHittable, element: textFieldApiKey)
         textFieldApiKey.tap()
-        textFieldApiKey.clearText()
         textFieldApiKey.typeText(apiKey)
         return self
     }

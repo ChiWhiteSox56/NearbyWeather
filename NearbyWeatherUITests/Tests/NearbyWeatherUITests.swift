@@ -2,35 +2,53 @@
 //  NearbyWeatherUITests.swift
 //  NearbyWeatherUITests
 //
-//  Created by Erik Maximilian Martens on 03.12.16.
-//  Copyright © 2016 Erik Maximilian Martens. All rights reserved.
+//  Created by Cindy Michalowski on 05.26.19.
+//  Copyright © 2019 Cindy Michalowski. All rights reserved.
 //
 
 import XCTest
 
 class NearbyWeatherUITests: XCTestCase {
-        
+
+    let aboutScreen = AboutScreen()
+    let addLocationScreen = AddLocationScreen()
+    let bottomTabBar = BottomTabBar()
+    let listScreen = ListScreen()
+    let settingsScreen = SettingsScreen()
+
     override func setUp() {
         super.setUp()
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
-    
+
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+    func testNavigateToSettingsScreen_SettingsScreenIsDisplayedAsExpected() {
+
+        bottomTabBar
+            .tapTabSettings()
+
+        XCTAssert(settingsScreen.isDisplayedAsExpected(), "The Settings Screen is displayed as expected")
     }
-    
+
+    func testAddLocationNewYork_VerifyNewYorkIsDisplayedOnList() {
+
+        bottomTabBar
+            .tapTabSettings()
+
+        settingsScreen
+            .tapListItemAddLocation()
+
+        addLocationScreen
+            .searchLocationByName("New York, US")
+            .tapSelectedCityInSearchResults("New York, US")
+
+        bottomTabBar
+            .tapTabList()
+
+        XCTAssert(listScreen.isDisplayedAsExpected(locations: ListScreenStrings.allLocations), "The List Screen displays weather data for Cupertino and New York")
+    }
 }
